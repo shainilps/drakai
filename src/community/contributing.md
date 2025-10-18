@@ -8,7 +8,7 @@ Well I won't include any restriction on contributing but keep in mind that, This
 
 ---
 
-This Project uses Astro with Starlight template for Implimentation. Refer thier docs for syntax support [Astro Starlight](https://starlight.astro.build),
+This Project uses vulphix for ssg. Refer thier docs for syntax support [vulphix](https://github.com/shainilps/vulphix),
 
 ## Project Setup
 
