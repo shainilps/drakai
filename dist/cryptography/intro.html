@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Introduction</title>
+        <meta name="description" content="Resource site for cryptograhy concpets" />
+        <meta name="author" content="https://x.com/shainilps" />
+        <meta name="og:title" content="Introduction" />
+        <meta name="og:description" content="Resource site for cryptograhy concpets" />
+        <meta name="og:url" content="drakai.netlify.app" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <script>
+            (function () {
+                const savedTheme = localStorage.getItem("theme");
+                if (savedTheme === "dark") {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                }
+            })();
+        </script>
+        
+        <link rel="stylesheet" href="/style.css" />
+        
+    </head>
+    <body>
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+
+        <header class="mobile-header">
+            <button class="mobile-nav-toggle" id="mobileNavToggle">☰</button>
+            <a href="/" class="mobile-logo">drakai</a>
+        </header>
+
+        <button class="theme-toggle" onclick="toggleTheme()" id="themeToggle">
+            🌙
+        </button>
+
+        <nav class="bar" id="sidebar">
+            <a href="/" class="logo"> drakai </a>
+            <div class="container">
+                
+                <section>
+                    <h3>Cryptography</h3>
+                    <ul>
+                        
+                        <li>
+                            <a href="/cryptography/intro">Introduction</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/cryptography/concepts">Cryptography Concepts</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/cryptography/intro_encryption">Introduction to Encryption</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/cryptography/diff_btw_encryption_encoding">Difference of Encryption and Encoding</a>
+                        </li>
+                        
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Jorgons</h3>
+                    <ul>
+                        
+                        <li>
+                            <a href="/jorgons/cryptograhpy">Cryptography</a>
+                        </li>
+                        
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Community</h3>
+                    <ul>
+                        
+                        <li>
+                            <a href="/community/contributing">Contribution Guide</a>
+                        </li>
+                        
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Links</h3>
+                    <ul>
+                        
+                        <li>
+                            <a href="https://github.com/shainilps/vulphix">Github</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://x.com/shainilps">Twitter</a>
+                        </li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </nav>
+        <main class="content">
+            <h1>Introduction</h1>
+            <p>You might have noticed that I have written Cryptography instead of Cryptology. If you are complete beginner then let me inform you,</p>
+<pre><code>          ┌────────────────────┐
+          │    Cryptology      │
+          └────────┬───────────┘
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+┌───────▼───────┐     ┌───────▼─────────┐
+│ Cryptography  │     │ Cryptanalysis   │
+└───────────────┘     └─────────────────┘
+</code></pre>
+<p>Cryptology is the broad term which involves study related to Cryptographic algorithms. whereas Cryptanalysis is about breaking those algorithms. well in Cryptography if the algorithm is broken then it is not safe to use. so all of the algorithms that we are using are still unbroken.
+If you are complete novice let me tell you why these algorithm can't be broken easily. It's not because these algorithm's source code is hidden or it is super perfect. It still can be broken with one certain method, that is Brute Force. But if it can be broken with Brute Force then isn't that contradict my previous statment. well no, just because something can be broken with brute force that doesn't mean it is unsafe.</p>
+<p>Let me give you the perfect example for all of this. suppose you and your friend is communicating by exchanging papers in classroom when teacher is teaching. since this involves of risk of being caught so you guys simply communicate through a method called ceaser cipher. well whatever you want to say gonna be converted to cipher. well how ?
+you are gonna swap the letters with another letter which is 3 letters ahead of it. for example if you want to say &quot;hello&quot; then it will be converted to &quot;khoor&quot;.Now even if teacher caught you guys. your teacher won't know what exactly you guys are talking about. but suppose youre teacher knows the method and key then it would be easy to decrypt the message. Suppose another guy who found the paper tries to decrypt the message. well he can't do it because he doesn't know the key. so he has to try all the possible keys. well there are only 26 possible keys. so he can try all of them and can get the answer but this takes time right. soo the boy who decrypted the message is using brute force approach, he tried all combination of keys. but it took lot of time. This exactly what still happening world. but in real world this decryption time can be veried from years to decades or even centuries depending on CPU power can get the answer but this takes time right. soo the boy who decrypted the message is using brute force approach, he tried all combination of keys. but it took lot of time. This exactly what still happening world. but in real world this decryption time can be veried from years to decades or even centuries depending on CPU power.</p>
+<p>Drakai isn't about Cryptanalysis, which is more about cyber security concpet. soo we only discuss realated to Cryptography</p>
+
+        </main>
+        <script>
+            function toggleTheme() {
+                const html = document.documentElement;
+                const toggleBtn = document.getElementById("themeToggle");
+                if (html.getAttribute("data-theme") === "dark") {
+                    html.removeAttribute("data-theme");
+                    toggleBtn.textContent = "🌙";
+                    localStorage.setItem("theme", "light");
+                } else {
+                    html.setAttribute("data-theme", "dark");
+                    toggleBtn.textContent = "☀️";
+                    localStorage.setItem("theme", "dark");
+                }
+            }
+
+            
+            const mobileNavToggle = document.getElementById("mobileNavToggle");
+            const sidebar = document.getElementById("sidebar");
+            const mobileOverlay = document.getElementById("mobileOverlay");
+
+            function toggleMobileNav() {
+                sidebar.classList.toggle("open");
+                mobileOverlay.classList.toggle("active");
+
+                
+                if (sidebar.classList.contains("open")) {
+                    mobileNavToggle.textContent = "✕";
+                } else {
+                    mobileNavToggle.textContent = "☰";
+                }
+            }
+
+            function closeMobileNav() {
+                sidebar.classList.remove("open");
+                mobileOverlay.classList.remove("active");
+                mobileNavToggle.textContent = "☰";
+            }
+
+            
+            mobileNavToggle.addEventListener("click", toggleMobileNav);
+            mobileOverlay.addEventListener("click", closeMobileNav);
+
+            
+            sidebar.addEventListener("click", (e) => {
+                if (e.target.tagName === "A" && window.innerWidth <= 768) {
+                    closeMobileNav();
+                }
+            });
+
+            
+            window.addEventListener("resize", () => {
+                if (window.innerWidth > 768) {
+                    closeMobileNav();
+                }
+            });
+
+            
+            (function () {
+                const savedTheme = localStorage.getItem("theme");
+                if (savedTheme === "dark") {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                    document.getElementById("themeToggle").textContent = "☀️";
+                }
+            })();
+        </script>
+    </body>
+</html>
