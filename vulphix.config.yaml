@@ -1,0 +1,31 @@
+title: drakai
+domain: drakai.netlify.app
+description: Resource site for cryptograhy concpets
+handle: https://x.com/shainilps
+source: src
+build: dist
+sidebar:
+  - title: Cryptography
+    pages:
+      - - Introduction
+        - /cryptography/intro
+      - - Cryptography Concepts
+        - /cryptography/concepts
+      - - Introduction to Encryption
+        - /cryptography/intro_encryption
+      - - Difference of Encryption and Encoding
+        - /cryptography/diff_btw_encryption_encoding
+  - title: Jorgons
+    pages:
+      - - Cryptography
+        - /jorgons/cryptograhpy
+  - title: Community
+    pages:
+      - - Contribution Guide
+        - /community/contributing
+  - title: Links
+    pages:
+      - - Github
+        - https://github.com/shainilps/vulphix
+      - - Twitter
+        - https://x.com/shainilps

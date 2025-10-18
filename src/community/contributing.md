@@ -1,54 +1,44 @@
 ---
 title: Contribution Guide
-description: A guide to contribute this project
-
 ---
 
-import { Steps } from '@astrojs/starlight/components';
-
-Hi guys, This is <a href="https://github.com/codeshaine" target="_blank" rel="noopener noreferrer">
-codeshaine
-</a> (for now). If have visited this page then I would assume you might be thinking of contributing to this project. If yes, then go ahead do a PR, I will merge it.
+Hi guys, This is [shainil](https://github.com/shainilps) (for now). If have visited this page then I would assume you might be thinking of contributing to this project. If yes, then go ahead do a PR, I will merge it.
 
 Well I won't include any restriction on contributing but keep in mind that, This site is made for developers to understand cryptography related stuff, it would be better if you add content by yourself, without pasting AI slop. though you can generate programming example either in Golang or Typescript(if you have an other lanugage in mind then contact me ahead) with AI but do explain it well.
 
 ---
-import { Aside } from '@astrojs/starlight/components';
 
-<Aside>
-  This Project uses Astro with Starlight template for Implimentation. Refer thier docs for syntax support [Astro Starlight](https://starlight.astro.build),
-</Aside>
-
+This Project uses Astro with Starlight template for Implimentation. Refer thier docs for syntax support [Astro Starlight](https://starlight.astro.build),
 
 ## Project Setup
 
 feel free to skip this if you already know how to setup project locally and know how to do a PR
-<Steps>
+
 1. Fork the Repository
 2. Clone your fork
 3. Execute the command
-
 
    ```bash
    pnpm install  #installing dependency
    ```
 
-
    ```bash
    pnpm run dev  #running project
    ```
 
-
    ```bash
    pnpm run build  #building project
    ```
+
 4. You can either create a new issue and comment that you're working on it, or reply to an existing issue to indicate that you're taking it up. This helps avoid duplicate work by other contributors.
 5. Make your own branch
 
    Example:
+
    ```bash
    git checkout -b <username>/<feature>
    ```
+
 6. Commit your changes and push it to forked repo
 
    Example:
@@ -59,9 +49,7 @@ feel free to skip this if you already know how to setup project locally and know
    ```
 
 7. Make a PR
-</Steps>
+
 ---
 
-<div style="text-align: center; margin-top: 2rem;">
-  Happy Coding &lt;3
-</div>
+Happy Coding &lt;3
