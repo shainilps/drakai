@@ -2,6 +2,8 @@
 
 **drakai** is a documentation site built with [vulphix](https://github.com/shainilps/vulphix), designed to help engineers understand and apply cryptography concepts with clarity and practicality.
 
+work in progress when i have time.  
+
 > Learn cryptography with real-world code. Go from theory to implementation with guides written by and for developers.
 
 ## Topics (demo)
